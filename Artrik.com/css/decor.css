@@ -1,0 +1,494 @@
+/*mr arun saru, mr hiro*/
+*{
+	padding:0;
+	margin:0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	box-sizing: border-box;
+}
+
+/*top nav css*/
+.nav{
+    background-color: #211f22;
+    overflow: hidden;
+}
+/*inside nav*/
+
+
+.headerImg img{
+    margin:auto;   
+    padding: 3px;
+    text-align: center;
+    background-color: #fffff6;
+    display:block;
+}
+
+.headerImg img{
+    height: 50px;
+    width: 150px;
+}
+
+.nav img{
+    overflow: hidden;
+    text-align:left;
+    height: 52px;
+    width: 65px;
+    padding: 7px 10px 0px 10px;
+    margin: auto;
+    float: left;
+
+}
+
+.nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 22px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.nav .opt{
+    float:right;
+}
+
+
+
+
+.nav a.act{
+    background-color: #04aa6d;
+    color:#ffffff;
+}
+
+.nav a:hover{
+    background-color:lightgreen;
+    color:#000000;
+}
+
+.dropbar{
+    float: left;
+    overflow: hidden;
+}
+
+.dropbar .dropbtn{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 17px 19px 15px 1px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0px;
+    text-align: center;
+}
+
+.dropCont a:hover, .dropbar .dropbtn{
+    background-color: #211f22;
+}
+
+.dropCont{
+    display: none;
+    background-color: lightgreen;
+    min-width: 150px;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropCont a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropCont a:hover{
+    background-color: chartreuse;
+}
+
+.dropbar:hover .dropCont{
+    display: block;
+}
+
+.logo{
+    border-radius:50%;
+    background-color: #00ff00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.wall{
+    text-align: justify;
+    border-radius:10px;
+    display: flex;/*home page bigrea wall ko display block gara*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    width: 50%;   
+    
+}
+
+.description .explore{
+    border-radius:50%;
+    background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.description h3{
+    margin: auto;
+    padding: 100px;
+    text-align: justify;
+    color: #555;
+    margin: auto;
+    padding: 10px;
+    float: left;
+    letter-spacing: 1px;
+    line-height: 50px;
+    word-spacing: 6px;
+
+}
+
+.image{
+    margin: auto;
+    padding: 14px 14px
+}
+
+.image img{
+    margin: 4px;
+    padding: 40px;
+    height: 450px;
+    width: 23%;
+    -webkit-filter: blur(2px);
+    filter: blur(4px);
+    border-radius: 10px;
+}
+
+.image img:hover{
+    margin: 3px;
+    padding: 1px;
+    height: 450px;
+    width: 24%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    border-radius: 10px;
+    transition-delay: 15ms;
+}
+
+
+.uline{
+	width: 160px;
+	height: 2px;
+	background: #000;
+	margin: 40px auto;
+}
+
+
+/*footer design*/
+#footer{
+    padding: 10px;
+    border-top: 1px solid black;
+    color: #eeeeee;
+    background-color: #211f22;
+    text-align: center;
+}
+
+/*for about page*/
+
+
+/*flipping detail*/
+/*for box is for outerbox part*/
+.box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px;
+}
+  
+.innerbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+    margin: 10px;
+}
+  
+.box:hover .innerbox {
+    transform: rotateY(180deg);
+}
+  
+.frontimage, .backdetail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.frontimage {
+    margin: 10px;
+    background-color: white;
+    color: black;
+}
+  
+.backdetail {
+    border-radius: 50%;
+    background-color: lawngreen;
+    color: white;
+    transform: rotateY(180deg);
+}
+/*flipping details end*/
+
+/*put 4 about div in same line*/
+.samelinediv{
+    display: flex;
+}
+/*About page ends*/
+
+
+/*hiking pages start*/
+/*cover*/
+.coverdivs{
+    display: flex;
+}
+
+.coverText{
+    
+    margin: 50px;
+    padding-top: 30px;
+    padding-right: 10px;
+    text-align:justify;  
+}
+.coverimage{
+    padding: 25px;
+    padding-left: 40px;
+    padding-right: 5px;
+}
+
+.hnepal{
+    display: flex;
+}
+.hnepal2{
+    display: flex;
+}
+.hnepal3{
+    display: flex;
+}
+.hnepal4{
+    display: flex;
+}
+/*1st part left*/
+.abc{
+    
+    margin: 11px;
+    padding-right: 50px;
+    padding-left: 100px;
+}
+.abctext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.abc ul{
+    color: #555;
+    padding-left: 20px;
+}
+/*1st part right*/
+.jt{
+    
+    margin: 11px;
+    padding-right: 100px;
+    padding-left: 50px;
+}
+.jttext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.jt ul{
+    color: #555;
+    padding-left: 20px;
+}
+/*2nd part left side*/
+.ebc{
+    
+    margin: 11px;
+    padding-right: 50px;
+    padding-left: 100px;
+}
+.ebctext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.ebc ul{
+    color: #555;
+    padding-left: 20px;
+}
+/*2ns part right side*/
+.langtang{
+    
+    margin: 11px;
+    padding-right: 100px;
+    padding-left: 50px;
+}
+.langtangtext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.langtang ul{
+    color: #555;
+    padding-left: 20px; 
+}
+/*3rd part left*/
+.kori{
+    
+    margin: 11px;
+    padding-right: 50px;
+    padding-left: 100px;
+}
+.koritext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.kori ul{
+    color: #555;
+    padding-left: 20px;
+}
+/*3rd part right*/
+.palpa{
+    
+    margin: 11px;
+    padding-right: 100px;
+    padding-left: 50px;
+}
+.palpatext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.palpa ul{
+    color: #555;
+    padding-left: 20px; 
+}
+/*4th part left*/
+.gokyo{
+    
+    margin: 11px;
+    padding-right: 50px;
+    padding-left: 100px;
+}
+.gokyotext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.gokyo ul{
+    color: #555;
+    padding-left: 20px;
+}
+/*4th part right*/
+.mustang{
+    
+    margin: 11px;
+    padding-right: 100px;
+    padding-left: 50px;
+}
+.mustangtext{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+.mustang ul{
+    color: #555;
+    padding-left: 20px;
+}
+
+/*slideshow*/
+.pictures {
+    display:none;
+    border: 3px solid whitesmoke;
+    height: 500px;
+    width: 1000px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+}
+.slide-show{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.textt{
+    margin: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    border-spacing: 50px;
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+/*hiking ends*/
+
+/*forum starts*/
+
+
+
+
+/*forum ends*/
+
+@media only screen and(max-width:900px){
+    body{
+        background-color: blue;
+    }
+    .image{
+        margin: auto;
+        padding: 14px 14px
+    }
+
+    /*.samelinediv{
+       
+    }*/
+    
+    .image img{
+        margin: auto;
+        padding: 1px;
+        height: 150px;
+        width: 150 px;
+        -webkit-filter: blur(2px);
+        filter: blur(4px);
+        border-radius: 10px;
+    }
+    
+    .image img:hover{
+        margin: 3px;
+        padding: 1px;
+        height: 250px;
+        width: 150 px;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        border-radius: 10px;
+    }
+
+    .coverText{
+        display:flex;
+    }
+
+    
+
+}
