@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+    <head>
+        <title>
+            ART-RIK | Rock Climbing
+        </title>
+        <link rel="stylesheet" href="./css/gp.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+        <link rel="icon" href="../img/unnamed-removebg-preview.png">
+        <link rel="stylesheet" href="../css/decor.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerImg">
+                <a href="../index.html">
+                    <img src="../img/banner.png">
+                </a>
+            </div>
+            <div class="nav">
+                <!--<button>&#9776;</button>-->
+                <img src="../img/unnamed-removebg-preview.png">
+                <nav class="opt">
+                    <a href="../index.html">&#9750; HOME</a>
+                    <a href="../explore.html">&#9784; EXPLORE</a>
+                    <div class="dropbar">
+                        <button class="dropbtn">&#10064; CATEGORY</button>
+                        <div class="dropCont">
+                            <a href="#">DANCING</a>
+                            <a href="#">CAMPING</a>
+                            <a href="../hiking.html">HIKING</a>
+                            <a href="./rockclimbing.html">ROCK CLIMBING</a>
+                        </div>
+                    </div>
+                    <a href="./contactus.html">&phone; CONTACT&nbsp;&nbsp;US</a>
+                    <a href="../About.html">&#9752; ABOUT</a> 
+                </nav>
+            </div>
+        </header>
+        <br/>
+        <!--content area start(main viewport)-->
+        <div class="content">
+            <div class="part">
+
+                <h1>Hattiban Photos</h1>
+                <div class="full-img" id="fullImgbox">
+                    <img src="img/pokh1.jpg" id="fullImg"alt="">
+                    <span onclick="closefullImg()">x</span>
+                </div>
+    
+                <div class="image-cont">
+                    <div class="photo"><img src="img/hattiban.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban2.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban3.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban4.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban5.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban6.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban7.jpg" onclick=openfullImg(this.src) alt=""></div>
+                    <div class="photo"><img src="img/hattiban8.jfif" onclick=openfullImg(this.src) alt=""></div>
+                </div>
+            </div>
+            <script>
+                    var fullImgbox = document.getElementById("fullImgbox");
+                    var fullImg = document.getElementById("fullImg");
+    
+                    function openfullImg(pic){
+                        fullImgbox.style.display="flex";
+                        fullImg.src=pic;
+                        // it will update the source of image in full img
+                    }
+                    function closefullImg(){
+                        fullImgbox.style.display="none";
+                    }
+            </script>
+        </div>
+        <!--footer section start-->
+        <footer id="footer">
+            <div>
+                <img src="../img/unnamed-removebg-preview.png" style="height: 130px; width: 130px;">
+                <p>All rights reserved | Art-Rik.Com &copy; 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

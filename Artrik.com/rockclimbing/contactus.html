@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+    <head>
+        <title>
+            ART-RIK | Contact-Us
+        </title>
+        <link rel="stylesheet" href="../css/decor.css">
+        <link rel="stylesheet" href="./css/gp.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+        <link rel="icon" href="../img/unnamed-removebg-preview.png">
+        <script>
+            function formvalidation() {
+                let x = document.forms["form"]["fullname"].value;
+                    if (x.length <3) {
+                    
+                    alert("Name must be filled out");
+                    return false;
+                }
+                let y = document.forms["form"]["phone"].value;
+                if (y.length <=9) {
+                    alert("Enter a valid phone number"); 
+                    return false;
+                }
+                let z = document.forms["form"]["detail"].value;
+                if (z.length<=10) {
+                    
+                    alert("Enter more than 10 characters in comments"); 
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="headerImg">
+                <a href="../index.html">
+                    <img src="../img/banner.png">
+                </a>
+            </div>
+            <div class="nav">
+                <!--<button>&#9776;</button>-->
+                <img src="../img/unnamed-removebg-preview.png">
+                <nav class="opt">
+                    <a href="../index.html">&#9750; HOME</a>
+                    <a href="../explore.html">&#9784; EXPLORE</a>
+                    <div class="dropbar">
+                        <button class="dropbtn">&#10064; CATEGORY</button>
+                        <div class="dropCont">
+                            <a href="#">DANCING</a>
+                            <a href="#">CAMPING</a>
+                            <a href="../hiking.html">HIKING</a>
+                            <a href="./rockclimbing.html">ROCK CLIMBING</a>
+                        </div>
+                    </div>
+                    <a href="./contactus.html">&phone; CONTACT&nbsp;&nbsp;US</a>
+                    <a href="../About.html">&#9752; ABOUT</a> 
+                </nav>
+            </div>
+        </header>
+        <!--content area start(main viewport)-->
+            <div class="container">
+                <h1>Connect with us</h1>
+                <p>We respond within an hour. Dont hesitate to contact with us.</p>
+                <div class="contact-box">
+                    <div class="contact-left">
+                        <h3>Send your message</h3>
+                        <!-- <div id="error_message"></div>onsubmit= "return validation()"  -->
+                        <form action="./insert.php" onsubmit="return formvalidation();" id="form" method="post" > 
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <span>Name:</span>
+                                    <input type="text" name="fullname" placeholder="Mark Angel" id="fullname">
+                                </div>
+                                <div class="input-group">
+                                    <span>Phone:</span>
+                                    <input type="text" name="phone" id="phone" placeholder="9800000000" required="required">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <span>E-mail:</span>
+                                    <input type="email" name="email" id="email" placeholder="angelmark@yahoo.com">
+                                </div>
+                                <div class="input-group">
+                                    <span>Subject:</span>
+                                    <input type="text" name="subject" id="subject" placeholder="Rock-climbing">
+                                </div>
+                            </div>
+                            <span>Comment:</span>
+                            <textarea type="text" name="detail" id="detail" placeholder="Your suggestion and feedback" rows="7" cols="30"></textarea>
+                            <button type="submit" name="send" id="submit" value="submit">Send</button>
+                            <button type="reset" name="reset" value="reset">Reset</button>
+        
+                        </form>
+                    </div>
+                    <div class="contact-right">
+                        <h2>Contact Us</h2>
+        
+                        <div class="contacttext-details">
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Address </h3>
+                                    <p>Pokhara Ranipuwa-11</p>
+                                </div>
+                            </div>
+        
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Phone </h3>
+                                    <p>(+977) 068-999999
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Email </h3>
+                                    <p>artrik@admin.com</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--footer section start-->
+        <footer id="footer">
+            <div>
+                <img src="../img/unnamed-removebg-preview.png" style="height: 130px; width: 130px;">
+                <p>All rights reserved | Art-Rik.Com &copy; 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>
